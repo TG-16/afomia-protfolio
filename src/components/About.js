@@ -3,13 +3,35 @@ import React from 'react';
 function About() {
   return (
     <div className="page about">
-      <h2>About Me</h2>
-      <img src="afomia.png" alt="Afomia Andualem" className="about-img" />
-      <h3>Afomia Andualem</h3>
-      <div className="profile-text">
-        <p>
-          I'm a Mandela Washington Fellow 2024 and hold a BSc in Electrical Engineering and a BA in Management, with enhanced expertise from ISS at Technical University of Munich. I led as Co-Founder and CEO of Agelgil Eco-Packaging since 2021 G.C. My approach as a steward entrepreneur emphasizes innovation, environmental conservation, and the empowerment of the youth in green entrepreneurship. Recognized as Land Restoration Champion Africa 2025 and an Africa Prize Alumni (2022), and winner of the Bruh Innovation Award, my journey illustrates the impact of pioneering solutions and collaborative efforts in sustainable development. Beyond steering Agelgil, I dedicate myself as a mentor, trainer, and volunteer, nurturing future women leaders in STEM across Africa.
-        </p>
+      <h2>About Afomia</h2>
+      <div className="about-content">
+        <div className="about-section">
+          <img src="afomia.png" alt="Afomia Andualem" className="about-img" />
+          <div className="about-text">
+            <h3>Professional Background</h3>
+            <p>
+              Afomia Andualem is a distinguished electrical engineer and entrepreneur with a passion for sustainable development. She holds a BSc in Electrical Engineering and a BA in Management, complemented by advanced studies at the Technical University of Munich.
+            </p>
+          </div>
+        </div>
+        <div className="about-section">
+          <img src="afomia.png" alt="Afomia's Achievements" className="about-img" />
+          <div className="about-text">
+            <h3>Leadership & Achievements</h3>
+            <p>
+              As the CEO of iGreen Entrepreneur and Co-Founder of Agelgil Eco-Packaging, Afomia has demonstrated exceptional leadership in green innovation. Her work has been recognized with prestigious awards including the Africa Prize for Engineering Innovation and Land Restoration Champion.
+            </p>
+          </div>
+        </div>
+        <div className="about-section">
+          <img src="afomia.png" alt="Afomia's Vision" className="about-img" />
+          <div className="about-text">
+            <h3>Vision & Mission</h3>
+            <p>
+              Afomia is committed to driving sustainable solutions that address environmental challenges while creating economic opportunities. Her mission focuses on empowering youth through green entrepreneurship and promoting eco-friendly technologies across Africa.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

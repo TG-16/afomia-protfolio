@@ -4,26 +4,27 @@ import { useHistory } from 'react-router-dom';
 function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const testimonials = [
-    { text: '"Afomia\'s innovative approach is inspiring." - Amare Kassaw', id: 1 },
-    { text: '"A true leader in sustainability." - Prof. Amos Omamo', id: 2 },
-    { text: '"Exceptional mentor." - TEF Feedback', id: 3 },
+    { text: "Africa Prize for Engineering Innovation", name: "Royal Academy of Engineering", id: 1 },
+    { text: "Land Restoration Champion 2023", name: "Africa Prize Alumni", id: 2 },
+    { text: "Bruh Innovation Award", name: "Bahirdar University", id: 3 },
   ];
   const history = useHistory();
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 5000); // Change every 5 seconds
+    }, 5000);
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
-  const handleSeeProjectsClick = () => {
-    history.push('/projects');
+  const handleContactMeClick = () => {
+    history.push('/contact');
   };
 
   return (
     <div className="page home">
-      <h2>Home Page</h2>
+      <h2>Afomia Andualem</h2>
+      
       <div className="profile-section">
         <img src="afomia.png" alt="Afomia Andualem" className="profile-img" />
         <div className="profile-text">
@@ -31,12 +32,13 @@ function Home() {
           <p>
             CEO iGreen Entrepreneur. I'm a Mandela Washington Fellow 2024 and hold a BSc in Electrical Engineering and a BA in Management, with enhanced expertise from ISS at Technical University of Munich. I led as Co-Founder and CEO of Agelgil Eco-Packaging since 2021 G.C. My approach emphasizes innovation, environmental conservation, and youth empowerment in green entrepreneurship. Recognized as Land Restoration Champion Africa 2025 and an Africa Prize Alumni (2022), and winner of the Bruh Innovation Award, my journey illustrates the impact of pioneering solutions and collaborative efforts in sustainable development.
           </p>
-          <button className="cta-button" onClick={handleSeeProjectsClick}>
-            See Projects
+          <button className="cta-button" onClick={handleContactMeClick}>
+            Contact Me
           </button>
         </div>
       </div>
-      <div className="awards-projects">
+
+      <div className="section-spacing awards-projects">
         <h3>Awards & Projects</h3>
         <div className="grid">
           <div className="card">
@@ -56,7 +58,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="latest-engagement">
+
+      <div className="section-spacing latest-engagement">
         <h3>Latest Engagement</h3>
         <div className="engagement-item">
           <div className="engagement-image" style={{ backgroundImage: `url(afomia.png)` }}></div>
@@ -65,22 +68,35 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="testimonials">
+
+      <div className="section-spacing testimonials">
         <h3>Testimonials</h3>
-        <div className="testimonial-slider">
+        <div className="testimonial-carousel">
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
               className={`testimonial-slide ${index === currentTestimonial ? 'active' : ''}`}
             >
-              <div className="card">
-                <p>{testimonial.text}</p>
+              <div className="testimonial-image" style={{ backgroundImage: `url(afomia.png)` }}></div>
+              <div className="testimonial-content">
+                <h4>{testimonial.text}</h4>
+                <p style={{ fontStyle: 'italic' }}>- {testimonial.name}</p>
               </div>
             </div>
           ))}
+          <div className="testimonial-dots">
+            {testimonials.map((_, index) => (
+              <span
+                key={index}
+                className={`dot ${index === currentTestimonial ? 'active' : ''}`}
+                onClick={() => setCurrentTestimonial(index)}
+              ></span>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="contact-me">
+
+      <div className="home-contact-form section-spacing">
         <h3>Contact Me</h3>
         <div className="contact-form">
           <form>

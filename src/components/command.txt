@@ -1,0 +1,14 @@
+add vertical spacing in the home page 
+and the contact me form width should be reverse back to what it was in home page
+
+in about page when it is in mobile view make the images at the top and the texts at the bottom for each
+
+in project page 
+the design should have several rows with each row at most containing 3 cards
+
+in contact page
+when it is in mobile view the form should be on the top 
+
+in mobile view add "Afomia Andualem" beside the humberger menu and when clicked it should send to home page
+
+based on these update send me the full code

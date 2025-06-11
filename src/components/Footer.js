@@ -7,21 +7,21 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-contact">
           <h4>Contact Information</h4>
-          <p>Email: <a href="mailto:amex2121@gmail.com">amex2121@gmail.com</a></p>
-          <p>References: Amare Kassaw (<a href="mailto:amex2121@gmail.com">amex2121@gmail.com</a>), Prof. Amos Omamo (<a href="mailto:aodhiambo@must.ac.ke">aodhiambo@must.ac.ke</a>)</p>
+          <p>Email: <a href="mailto:afomiandualem@gmail.com">afomiandualem@gmail.com</a></p>
+          <p>References available upon request</p>
         </div>
         <div className="footer-nav">
-          <h4>Navigation</h4>
+          <h4>Quick Links</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/engagement">Engagement</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
       </div>
-      <p>© 2025 Afomia Andualem. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Afomia Andualem. All rights reserved.</p>
     </footer>
   );
 }
