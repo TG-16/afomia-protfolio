@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 
 function Home() {
+  const [status, setStatus] = useState('');
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const testimonials = [
     { text: "Africa Prize for Engineering Innovation", name: "Royal Academy of Engineering", id: 1 },
@@ -20,6 +23,30 @@ function Home() {
   const handleContactMeClick = () => {
     history.push('/contact');
   };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  
+  const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs.send(
+    'service_05uvmhm',       // Replace with your EmailJS service ID
+    'template_0q7hkqp',      // Replace with your EmailJS template ID
+    formData,                // Must match the template keys
+    'HdNnBaXdB6uRny-Oq' // Replace with your EmailJS public key
+  )
+  .then((result) => {
+    console.log(result.text);
+    setStatus('Message sent successfully!');
+    setFormData({ name: '', email: '', message: '' });
+  })
+  .catch((error) => {
+    console.error(error.text);
+    setStatus('Failed to send message. Try again later.');
+  });
+};
 
   return (
     <div className="page home">
@@ -97,6 +124,43 @@ function Home() {
       </div>
 
       <div className="home-contact-form section-spacing">
+      <h3>Contact Me</h3>
+      <div className="contact-container">
+        <div className="contact-form">
+          <h3>Send a Message</h3>
+          <p>Feel free to reach out for collaborations or inquiries.</p>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Your Message"
+              required
+            />
+            <button type="submit">Send</button>
+          </form>
+          {status && <p className="status">{status}</p>}
+        </div>
+      </div>
+      </div>
+
+      {/* <div className="home-contact-form section-spacing">
         <h3>Contact Me</h3>
         <div className="contact-form">
           <form>
@@ -106,7 +170,7 @@ function Home() {
             <button type="submit">Send</button>
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
