@@ -18,46 +18,49 @@ function About() {
           <img src="work.png" alt="Afomia's Achievements" className="about-img" />
           <div className="about-text">
             <h3>WORK EXPERIENCE</h3>
-            <p>
+            
               <table>
+                <tbody>
                 <tr>
                   <td><ul><li>Agelgil Eco -Packaging CEO and Co-founder </li></ul></td>
-                  <td>(2021 - Present)</td>
+                  <td><img src='pp.png' alt='testing img' /></td>
                 </tr>
                  <tr>
                   <td><ul><li>Micromentor.org Mentor Volunteer mentoring service for aspiring entrepreneurs and startups </li></ul></td>
-                  <td>(2022 - Present)</td>
+                  <td><img src='pp.png' alt='testing img' /></td>
                 </tr>
                  <tr>
                   <td><ul> <li>Pahal Horizon International Research Journal Associate Editor/ Board Member </li></ul></td>
-                  <td>(2024 - Present)</td>
+                  <td><img src='pp.png' alt='testing img' /></td>
                 </tr>
                  <tr>
                   <td><ul> <li>YegnaImpact/Impact architect founder/Sustainability Head </li></ul></td>
-                  <td>(2023 - Present)</td>
+                  <td><img src='pp.png' alt='testing img' /></td>
                 </tr>
                  <tr>
                   <td><ul><li>Plymouth University Mentor</li></ul></td>
-                  <td>(2023 - 2024)</td>
+                  <td><img src='pp.png' alt='testing img' /></td>
                 </tr>
                 <tr>
                   <td><ul> <li> Addis Ababa Youth and Sport Federation Teacher </li></ul></td>
-                  <td>( 2017 - 2020)</td>
+                  <td><img src='pp.png' alt='testing img' /></td>
                 </tr>
                 <tr>
                   <td><ul><li>Electrical and Computer Engineering Association Project Leader </li></ul></td>
-                  <td>(2019 - 2021)</td>
+                  <td><img src='book.png' alt='testing img' /></td>
                 </tr>
+                </tbody>
               </table>
-            </p>
+            
           </div>
         </div>
         <div className="about-section">
           <img src="education.png" alt="Afomia's Achievements" className="about-img" />
           <div className="about-text">
             <h3>EDUCATION</h3>
-            <p>
+            
               <table>
+                <tbody>
                 <tr>
                   <td><ul><li>BAHIR DAR UNIVERSITY Bachelor of Electrical and Computer Engineering</li></ul></td>
                   <td>(2016 - 2021)</td>
@@ -74,8 +77,9 @@ function About() {
                   <td><ul><li>CLARK ATLANTA UNIVERSITY USA Business leadership (Yali)</li></ul></td>
                   <td>2024</td>
                 </tr>
+                </tbody>
               </table>
-            </p>
+            
           </div>
         </div>
         <div className="about-section">

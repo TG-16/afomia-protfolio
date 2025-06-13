@@ -491,6 +491,15 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.about-text img {
+  width: 20%;
+    transition: transform 0.3s ease;
+}
+
+.about-text img:hover {
+  transform: scale(5);
+  transition: transform 0.3s ease;
+}
 /* Engagement Page Styles */
 .engagement-container {
   display: flex;

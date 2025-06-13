@@ -75,7 +75,7 @@ function Home() {
       <h2>Afomia Andualem</h2>
 
       <div className="profile-section">
-        <img src="pp.png" alt="Afomia Andualem" className="profile-img" />
+        <img src="homepp.png" alt="Afomia Andualem" className="profile-img" />
         <div className="profile-text">
           <h3>Afomia Andualem</h3>
           <p>
