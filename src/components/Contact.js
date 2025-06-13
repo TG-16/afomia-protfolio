@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -70,12 +71,19 @@ const handleSubmit = (e) => {
         <div className="contact-info">
           <h3>Contact Info</h3>
           <p>Email: <a href="mailto:afomiandualem@gmail.com">afomiandualem@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/afomia-andualem">linkedin.com/in/afomia-andualem</a></p>
-          <p>References:</p>
-          <ul>
+          <p>LinkedIn: <a href="https://linkedin.com/in/afomia-andualem" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin size={24} color="#0A66C2" />
+                      </a></p>
+          <p>Instagram: <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram size={24} color="#E1306C" />
+                      </a></p>
+          <p>Twitter: <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <FaTwitter size={24} color="#1DA1F2" />
+                      </a></p>
+          {/* <ul>
             <li>Amare Kassaw - <a href="mailto:afomiandualem@gmail.com">afomiandualem@gmail.com</a></li>
             <li>Prof. Amos Omamo - <a href="mailto:aodhiambo@must.ac.ke">aodhiambo@must.ac.ke</a></li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

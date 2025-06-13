@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Engagement from './components/Engagement';
 import Footer from './components/Footer';
+import MediaAndCoverage from './components/Media'; 
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
           <Route path="/engagement" component={Engagement} />
+          <Route path="/media" component={MediaAndCoverage} />
         </Switch>
         <Footer />
       </div>
