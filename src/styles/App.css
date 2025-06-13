@@ -408,6 +408,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.about-section li {
+  list-style:  none;
+}
+
 /* Contact Page Styles */
 .contact-container {
   display: flex;
@@ -492,14 +496,116 @@ body {
 }
 
 .about-text img {
-  width: 20%;
+  width: 35%;
     transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .about-text img {
+    width: 100%;
+  }
 }
 
 .about-text img:hover {
   transform: scale(5);
   transition: transform 0.3s ease;
 }
+
+/* see detail*/
+.see-details-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #007BFF;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.see-details-link:hover {
+  color: #0056b3;
+}
+
+
+/*link style for work and education*/
+.about-section table a {
+  color: #004aad; /* Dark blue for clarity */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.about-section table a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.about-section table ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.about-section table ul li {
+  margin-bottom: 8px;
+  /* font-size: 15px; */
+  line-height: 1.5;
+}
+
+.about-section table img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+
+/*read more */
+.about .read-more-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007b5e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about .read-more-btn:hover {
+  background-color: #005f48;
+}
+
+.about .about-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.about-img {
+  max-width: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-text table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.about-text table td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+.about-text table img {
+  max-width: 80px;
+  height: auto;
+  display: block;
+}
+
 /* Engagement Page Styles */
 .engagement-container {
   display: flex;

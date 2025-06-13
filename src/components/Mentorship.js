@@ -23,8 +23,8 @@ function Mentorship() {
     { 
       id: 4, 
       title: "Anchored generation Ethio Kenya Mentorship", 
-      desc: "African Enterprise Kenya empowers youth through faith-based missions like the 6-month Foxfire Program, helping them grow in purpose and leadership.", 
-      image: "kenyaMentor.png" 
+      desc: "Anchored Generation Academy aims to empower youth with strong values, vision, and life skills to become responsible and purpose-driven leaders. The Academy provides mentorship, civic education, and leadership development programs that help young people build character, confidence, and clarity as they navigate personal growth and social responsibility. It is committed to shaping anchored citizens who lead with integrity, serve their communities, and create lasting impact.", 
+      image: "ethioKenya.png" 
     },
   ];
 

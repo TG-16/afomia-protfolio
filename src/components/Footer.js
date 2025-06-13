@@ -13,7 +13,7 @@ function Footer() {
 
           {/* Social Media Icons */}
           <div className="social-icons" style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/afomia-andualem/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={24} color="#0A66C2" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -32,9 +32,10 @@ function Footer() {
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/about">About Me</Link></li>
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/engagement">Engagement</Link></li>
+            <li><Link to="/Media">Media & Coverage</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>

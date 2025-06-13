@@ -12,12 +12,12 @@ function Projects() {
           <p>Awareness and Fortified Foods</p>
         </div> */}
         <div className="project-card">
-          <img src="afomia.png" alt="Women in STEM" className="project-img" />
+          <img src="womenSteam.png" alt="Women in STEM" className="project-img" />
           <h3>Women in STEM</h3>
           <p>Mentoring in Africa</p>
         </div>
         <div className="project-card">
-          <img src="afomia.png" alt="Sub-Saharan Partnership" className="project-img" />
+          <img src="subsara.png" alt="Sub-Saharan Partnership" className="project-img" />
           <h3>Sub-Saharan Partnership</h3>
           <p>Higher Education Collaboration</p>
         </div>
@@ -27,22 +27,22 @@ function Projects() {
 
       <div className="project-gallery">
         <div className="project-card">
-          <img src="afomia.png" alt="Anti-Foam Spray" className="project-img" />
+          <img src="p1.png" alt="Anti-Foam Spray" className="project-img" />
           <h3>Anti-Foam Spray PLC Controller</h3>
           <p>Simulation for Liquor Factory</p>
         </div>
         <div className="project-card">
-          <img src="afomia.png" alt="Pesticide Spray" className="project-img" />
+          <img src="p2.png" alt="Pesticide Spray" className="project-img" />
           <h3>Automatic Pesticide Spray</h3>
           <p>For Agricultural Use</p>
         </div>
         <div className="project-card">
-          <img src="afomia.png" alt="Solar Charger" className="project-img" />
+          <img src="p3.png" alt="Solar Charger" className="project-img" />
           <h3>Solar-Based Mobile Charger</h3>
           <p>Operated with Token Coin</p>
         </div>
         <div className="project-card">
-          <img src="afomia.png" alt="Security System" className="project-img" />
+          <img src="p4.png" alt="Security System" className="project-img" />
           <h3>Office Security System</h3>
           <p>Arduino Uno-Based</p>
         </div>

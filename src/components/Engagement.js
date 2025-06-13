@@ -12,19 +12,19 @@ function Engagement() {
     { 
       id: 2, 
       title: "Blood Donation Advocacy", 
-      desc: "Lifetime blood donor and advocate for health initiatives. Organized community blood drives that have collected over 500 units of blood for local hospitals.", 
+      desc: "Lifetime blood donor and advocate for health initiatives.", 
       image: "blood.png" 
     },
     { 
       id: 3, 
       title: "Books for Africa", 
-      desc: "Volunteered with Books For Africa initiative, helping to sort and pack over 10,000 educational books for distribution to schools in underserved communities.", 
+      desc: "Volunteered with Books For Africa initiative, helping to sort and pack books for distribution to schools in underserved communities.", 
       image: "book.png" 
     },
     { 
       id: 4, 
       title: "Yegna Impact", 
-      desc: "Led community programs focused on sustainability and youth empowerment, impacting over 200 young women through STEM education and leadership training.", 
+      desc: "Yegna Impact, a nonprofit dedicated to empowering women and youth through sustainability education, mental health advocacy, and inclusive development", 
       image: "yenga.png" 
     },
   ];
