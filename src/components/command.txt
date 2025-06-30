@@ -11,4 +11,3 @@ when it is in mobile view the form should be on the top
 
 in mobile view add "Afomia Andualem" beside the humberger menu and when clicked it should send to home page
 
-based on these update send me the full code
